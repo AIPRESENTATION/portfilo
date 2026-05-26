@@ -9,10 +9,9 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   // EmailJS Configuration
-  // Get these from https://dashboard.emailjs.com/
-  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_s8gp6hl';
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_pf1fk2k';
+  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '4b9HKuAaMIt-FqV9p';
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
